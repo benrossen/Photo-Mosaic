@@ -63,7 +63,7 @@ body {
 
 /* content area */
 #content {
-	width: 960px;
+	width: 100%;
 	margin: 0 auto;
 	-webkit-transition: width .5s;
 }
@@ -117,14 +117,15 @@ body {
 }
 
 #tiles {
-	width: 100%;
+	width: 120%;
 	height: 100%;
 	position: absolute;
 	top: 55px;
 	z-index: -1;
+	overflow: hidden;
 }
 #tiles .tile {
-	
+	float: left;
 }
 #tiles .tile img {
 	display: block;
@@ -145,6 +146,8 @@ body {
 .last {
 	margin-right: 0 !important;
 }
+
+.alert {color: red; margin-top: 10px;}
 
 
 /* media queries */
